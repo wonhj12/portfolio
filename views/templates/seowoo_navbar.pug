@@ -1,0 +1,21 @@
+nav.navbar.navbar-expand
+    .container-fluid.justify-content-center
+        .navbar-nav
+            a.nav-link(href='/seowoo') ♥
+            a.nav-link(href='/seowoo/notes') 낙서장
+            a.nav-link(href='#') 사진첩
+
+script.
+    document.addEventListener("DOMContentLoaded", function() {
+        const curActiveLink = document.querySelector('.nav-link.active');
+        if (curActiveLink) {
+            curActiveLink.classList.remove('active');
+            curActiveLink.removeAttribute('aria-current');
+        }
+        const newActiveLink = document.querySelector(`.nav-link[href='${location.pathname}']`);
+        if (newActiveLink) {
+            newActiveLink.classList.add('active');
+            newActiveLink.setAttribute('aria-current', 'page');
+        }
+    });
+

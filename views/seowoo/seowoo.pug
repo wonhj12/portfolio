@@ -1,0 +1,30 @@
+extends ../templates/main
+
+block content 
+    include ../templates/seowoo_navbar.pug
+    .spacer-lg.position-relative.bg-body-tertiary
+        .position-absolute.top-50.start-50.translate-middle
+            p.text-lg.text-center.lh-sm 하진 ♡ 서우
+            p.h1.text-center Love Story
+    .spacer-sm
+    .heart
+        svg(xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1923.71 659.96')
+            path.path.path-heart(d='M1.57,582.76c251.21-62.4,378.97,20.8,536.45,44.57s418.95-150.17,442.72-372.21S879.85,8.11,853.98,6.59s-101.94,15.21-135.41,97.37-21.3,88.24-68.46-6.09S528.4-4.06,472.11,18.76s-123.24,148.86-1.52,317.1,342.32,312.77,465.56,317.34,289.71-54.87,361.33-144.68,92.09-217.15,42.07-246.71c-50.02-29.56-95.5-6.82-117.1,28.42s-23.87,32.97-52.3-2.27-105.73-72.76-130.74,29.56,135.29,334.2,346.75,335.93,85.15-172.22,535.42-15.32')
+    .spacer-sm
+    .text-day-trigger.spacer-md.position-relative
+        .text-day.position-absolute.top-50.start-50.translate-middle
+            p.text-day-1.text-fade-in.text-lg.text-center 우리가 함께한지 어느덧
+            p.text-day-2.text-fade-in.h1.text-center 1일
+    .spacer-sm
+
+    //- https://seoyun-is-connecting-the-dots.tistory.com/296
+    //- https://jh-park94.tistory.com/4
+    //- https://velog.io/@x5foddl/JS-스크롤-위치에-따라-변하는-애니메이션-Apple-Music-UI-만들기
+    //- https://scrollmagic.io/examples/advanced/advanced_tweening.html
+
+    script(src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/ScrollMagic.min.js")
+    script(src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/plugins/animation.gsap.min.js")
+    script(src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js")
+    script(src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/plugins/debug.addIndicators.min.js")
+    script(src='/static/scripts/seowoo/seowoo.js')
+

@@ -1,0 +1,25 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "Portfolio Website",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon ./public/scripts/router/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wonhj12/portfolio.git"
+  },
+  "author": "Hajin",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/wonhj12/portfolio/issues"
+  },
+  "homepage": "https://github.com/wonhj12/portfolio#readme",
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "nodemon": "^3.1.4",
+    "pug": "^3.0.3"
+  }
+}
