@@ -2,20 +2,32 @@ extends ../templates/main
 
 block content 
     include ../templates/seowoo_navbar.pug
-    .spacer-lg.position-relative.bg-body-tertiary
+    .spacer-10.position-relative.bg-body-tertiary
         .position-absolute.top-50.start-50.translate-middle
             p.text-lg.text-center.lh-sm 하진 ♡ 서우
             p.h1.text-center Love Story
-    .spacer-sm
-    .heart
+    .spacer-2
+    .heart-trigger
         svg(xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1923.71 659.96')
             path.path.path-heart(d='M1.57,582.76c251.21-62.4,378.97,20.8,536.45,44.57s418.95-150.17,442.72-372.21S879.85,8.11,853.98,6.59s-101.94,15.21-135.41,97.37-21.3,88.24-68.46-6.09S528.4-4.06,472.11,18.76s-123.24,148.86-1.52,317.1,342.32,312.77,465.56,317.34,289.71-54.87,361.33-144.68,92.09-217.15,42.07-246.71c-50.02-29.56-95.5-6.82-117.1,28.42s-23.87,32.97-52.3-2.27-105.73-72.76-130.74,29.56,135.29,334.2,346.75,335.93,85.15-172.22,535.42-15.32')
-    .spacer-sm
-    .text-day-trigger.spacer-md.position-relative
+    .spacer-2
+    .text-day-trigger.spacer-6.position-relative
         .text-day.position-absolute.top-50.start-50.translate-middle
             p.text-day-1.text-fade-in.text-lg.text-center 우리가 함께한지 어느덧
             p.text-day-2.text-fade-in.h1.text-center 1일
-    .spacer-sm
+    .spacer-2
+    img.img-slide.img-fluid.d-block(src='/static/images/1.jpeg')
+    img.img-slide.img-fluid.d-block(src='/static/images/2.jpeg')
+    img.img-slide.img-fluid.d-block(src='/static/images/3.jpeg')
+    img.img-slide.img-fluid.d-block(src='/static/images/4.jpeg')
+    .spacer-4
+    .spacer-10
+    .text-love-trigger.spacer-6.position-relative
+        .text-love.position-absolute.top-50.start-50.translate-middle
+            p.text-love-1.text-fade-in.text-lg.text-center 사랑해
+            p.text-love-2.text-fade-in.text-lg.text-center 좋아해
+            p.text-love-3.text-fade-in.text-lg.text-center 애정해
+    .spacer-10
 
     //- https://seoyun-is-connecting-the-dots.tistory.com/296
     //- https://jh-park94.tistory.com/4
