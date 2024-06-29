@@ -4,7 +4,7 @@ block content
     include ../templates/seowoo_navbar.pug
     .spacer-10.position-relative.bg-body-tertiary
         .position-absolute.top-50.start-50.translate-middle
-            p.text-lg.text-center.lh-sm 하진 ♡ 서우
+            p.title-5.text-center.lh-sm 하진 ♡ 서우
             p.h1.text-center Love Story
     .spacer-2
     .heart-trigger
@@ -13,21 +13,37 @@ block content
     .spacer-2
     .text-day-trigger.spacer-6.position-relative
         .text-day.position-absolute.top-50.start-50.translate-middle
-            p.text-day-1.text-fade-in.text-lg.text-center 우리가 함께한지 어느덧
-            p.text-day-2.text-fade-in.h1.text-center 1일
+            p.text-day-1.title-4.text-center.fade 우리가 함께한 지 어느덧
+            p.text-day-2.h1.text-center.fade 1일
     .spacer-2
-    img.img-slide.img-fluid.d-block(src='/static/images/1.jpeg')
-    img.img-slide.img-fluid.d-block(src='/static/images/2.jpeg')
-    img.img-slide.img-fluid.d-block(src='/static/images/3.jpeg')
-    img.img-slide.img-fluid.d-block(src='/static/images/4.jpeg')
-    .spacer-4
-    .spacer-10
+    #carousel-img.carousel.carousel-dark.slide
+        .carousel-inner
+            .carousel-item.active 
+                img.img-fluid.rounded-5.d-block.w-75.mx-auto(src='/static/images/1.jpeg')
+            .carousel-item
+                img.img-fluid.rounded-5.d-block.w-75.mx-auto(src='/static/images/2.jpeg')
+            .carousel-item
+                img.img-fluid.rounded-5.d-block.w-75.mx-auto(src='/static/images/3.jpeg')
+            .carousel-item
+                img.img-fluid.rounded-5.d-block.w-75.mx-auto(src='/static/images/4.jpeg')
+        button.carousel-control-prev(type='button' data-bs-target='#carousel-img' data-bs-slide='prev')
+            span.carousel-control-prev-icon.text-dark(aria-hidden='true')
+            span.visually-hidden Previous
+        button.carousel-control-next(type='button' data-bs-target='#carousel-img' data-bs-slide='next')
+            span.carousel-control-next-icon(aria-hidden='true')
+            span.visually-hidden Next
+    .spacer-2
     .text-love-trigger.spacer-6.position-relative
         .text-love.position-absolute.top-50.start-50.translate-middle
-            p.text-love-1.text-fade-in.text-lg.text-center 사랑해
-            p.text-love-2.text-fade-in.text-lg.text-center 좋아해
-            p.text-love-3.text-fade-in.text-lg.text-center 애정해
-    .spacer-10
+            p.text-love-1.title-4.text-center.fade 사랑해
+            p.text-love-2.title-4.text-center.fade 좋아해
+            p.text-love-3.title-4.text-center.fade 애정해
+    .spacer-2
+    .spacer-10.bg-body-tertiary.py-5
+        .mx-auto.w-75
+            p.fs-4 세상에서 날 놀리는걸 제일 좋아하는 서우야!
+            p.fs-5.text-break 사랑해. 아주 많이, 정말 많이 사랑해. 이 세상 무엇과도 바꿀 수 없는 내 보물 서우! 서우가 내 여자친구라서 너무 행복해. 우리가 함께한 지난 날들이 너무나도 행복하고 즐거운 추억들로 가득하네. 
+
 
     //- https://seoyun-is-connecting-the-dots.tistory.com/296
     //- https://jh-park94.tistory.com/4
