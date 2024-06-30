@@ -1,3 +1,14 @@
+// 오늘 날짜 설정
+const today = document.querySelector('.today');
+const now = new Date();
+today.textContent = now
+    .toLocaleDateString('ko-KR', {
+        year: 'numeric',
+        month: 'long',
+        day: 'numeric',
+    })
+    .toString();
+
 // Init Scroll Magic controller
 let controller = new ScrollMagic.Controller();
 
@@ -59,7 +70,6 @@ let textDayScene = new ScrollMagic.Scene({
 // 사귄 일수 계산하는 함수
 function countDays() {
     const startDate = new Date('2022-10-10T00:00:00+09:00');
-    const now = new Date();
     const currentDate = new Date(
         now.toLocaleString('en-US', { timeZone: 'Asia/Seoul' })
     );
@@ -72,6 +82,7 @@ function countDays() {
 // 사귄 일수 카운터 애니메이션
 function counter() {
     const countTo = countDays();
+    const textDate = document.querySelector('.text-date');
 
     /* 입력한 숫자를 n번에 걸쳐 1부터 올림. */
     const each = Math.ceil(countTo / 80);
@@ -79,14 +90,14 @@ function counter() {
 
     for (let i = 1; i <= countTo; i += each) {
         setTimeout(() => {
-            textDay2.textContent = `${i}일`;
+            textDate.innerHTML = `${i}`;
         }, 20 * time);
         time++;
     }
 
     /* 딱 떨어지지 않는 숫자를 마지막에 그 숫자로 만들어주기 위함 */
     setTimeout(() => {
-        textDay2.textContent = `${countTo}일`;
+        textDate.innerHTML = `${countTo}`;
     }, 20 * (time + 1));
 }
 
@@ -138,9 +149,74 @@ textLoveTimeline
 
 let textLoveScene = new ScrollMagic.Scene({
     triggerElement: '.text-love-trigger',
-    duration: '500',
+    duration: '450',
 })
     .setTween(textLoveTimeline)
     .addTo(controller);
 
 /* 편지 애니메이션 */
+let letterTimeline = new TimelineMax();
+
+const letter = document.querySelector('.letter');
+const letter1 = document.querySelector('.letter-1');
+const letter2 = document.querySelector('.letter-2');
+const letter3 = document.querySelector('.letter-3');
+const letter4 = document.querySelector('.letter-4');
+const letter5 = document.querySelector('.letter-5');
+const letter6 = document.querySelector('.letter-6');
+const letter7 = document.querySelector('.letter-7');
+const letter8 = document.querySelector('.letter-8');
+
+letterTimeline
+    .to(letter, {
+        duration: 0.3,
+        ease: 'power2.inOut',
+        opacity: 1,
+    })
+    .to(letter1, {
+        duration: 1,
+        ease: 'sine.inOut',
+        opacity: 1,
+    })
+    .to(letter2, {
+        duration: 1,
+        ease: 'sine.inOut',
+        opacity: 1,
+    })
+    .to(letter3, {
+        duration: 1,
+        ease: 'sine.inOut',
+        opacity: 1,
+    })
+    .to(letter4, {
+        duration: 1,
+        ease: 'sine.inOut',
+        opacity: 1,
+    })
+    .to(letter5, {
+        duration: 1,
+        ease: 'sine.inOut',
+        opacity: 1,
+    })
+    .to(letter6, {
+        duration: 1,
+        ease: 'sine.inOut',
+        opacity: 1,
+    })
+    .to(letter7, {
+        duration: 1,
+        ease: 'sine.inOut',
+        opacity: 1,
+    })
+    .to(letter8, {
+        duration: 1,
+        ease: 'sine.inOut',
+        opacity: 1,
+    });
+
+let letterScene = new ScrollMagic.Scene({
+    triggerElement: '.letter-trigger',
+    duration: '300',
+})
+    .setTween(letterTimeline)
+    .addTo(controller);

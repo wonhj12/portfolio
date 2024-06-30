@@ -1,16 +1,17 @@
-const express = require('express');
-const app = express();
 require('dotenv').config();
 
+const express = require('express');
+const app = express();
+
+// Views
 app.set('view engine', 'pug');
 
-// Routers
+// Router js
 const seowooRouter = require('./seowoo_router');
 const homeRouter = require('./home_router');
 
-app.use('/static', express.static('public')); // public 폴더 접근
-
 // Routers
+app.use('/static', express.static('public')); // public 폴더 접근
 app.use('/', homeRouter);
 app.use('/seowoo', seowooRouter);
 

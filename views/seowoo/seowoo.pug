@@ -4,17 +4,25 @@ block content
     include ../templates/seowoo_navbar.pug
     .spacer-10.position-relative.bg-body-tertiary
         .position-absolute.top-50.start-50.translate-middle
-            p.title-5.text-center.lh-sm 하진 ♡ 서우
+            p.title-5.text-center.lh-sm
+                | 하진
+                span.title-heart.text-danger  ♥ 
+                | 서우
             p.h1.text-center Love Story
     .spacer-2
     .heart-trigger
         svg(xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1923.71 659.96')
-            path.path.path-heart(d='M1.57,582.76c251.21-62.4,378.97,20.8,536.45,44.57s418.95-150.17,442.72-372.21S879.85,8.11,853.98,6.59s-101.94,15.21-135.41,97.37-21.3,88.24-68.46-6.09S528.4-4.06,472.11,18.76s-123.24,148.86-1.52,317.1,342.32,312.77,465.56,317.34,289.71-54.87,361.33-144.68,92.09-217.15,42.07-246.71c-50.02-29.56-95.5-6.82-117.1,28.42s-23.87,32.97-52.3-2.27-105.73-72.76-130.74,29.56,135.29,334.2,346.75,335.93,85.15-172.22,535.42-15.32')
+            path.path.path-heart(d='M0,582.8c251.2-62.4,380.5,20.8,538,44.5c58.6,8.9,131.7-9.7,201.5-48c117.7-64.5,226.3-184.9,241.2-324.3C1004.5,33.1,879.8,8.1,854,6.6S752,21.8,718.6,104s-21.3,88.2-68.5-6.1S528.4-4.1,472.1,18.8s-123.2,148.9-1.5,317.1s342.3,312.8,465.6,317.3c81.3,3,181.4-21.8,260.6-64.8c40.9-22.2,76.3-49.3,100.7-79.8c71.6-89.8,107.1-203.8,42.1-246.7c-50-29.6-95.5-6.8-117.1,28.4s-23.9,33-52.3-2.3s-105.7-72.8-130.7,29.6s135.3,334.2,346.8,335.9s87.3-171.9,537.6-15')
     .spacer-2
     .text-day-trigger.spacer-6.position-relative
         .text-day.position-absolute.top-50.start-50.translate-middle
-            p.text-day-1.title-4.text-center.fade 우리가 함께한 지 어느덧
-            p.text-day-2.h1.text-center.fade 1일
+            p.text-day-1.title-4.text-center.fade 
+                | 우리가 
+                span.title-5.text-danger 사랑
+                | 한 지 어느덧
+            p.text-day-2.h1.text-center.fade 
+                span.title-3.text-danger.text-date 1
+                | 일
     .spacer-2
     #carousel-img.carousel.carousel-dark.slide
         .carousel-inner
@@ -35,14 +43,45 @@ block content
     .spacer-2
     .text-love-trigger.spacer-6.position-relative
         .text-love.position-absolute.top-50.start-50.translate-middle
-            p.text-love-1.title-4.text-center.fade 사랑해
-            p.text-love-2.title-4.text-center.fade 좋아해
-            p.text-love-3.title-4.text-center.fade 애정해
+            p.text-love-1.title-4.text-center.fade.text-danger 사랑해
+            p.text-love-2.title-4.text-center.fade.text-primary 좋아해
+            p.text-love-3.title-4.text-center.fade.text-warning 애정해
     .spacer-2
-    .spacer-10.bg-body-tertiary.py-5
-        .mx-auto.w-75
-            p.fs-4 세상에서 날 놀리는걸 제일 좋아하는 서우야!
-            p.fs-5.text-break 사랑해. 아주 많이, 정말 많이 사랑해. 이 세상 무엇과도 바꿀 수 없는 내 보물 서우! 서우가 내 여자친구라서 너무 행복해. 우리가 함께한 지난 날들이 너무나도 행복하고 즐거운 추억들로 가득하네. 
+    .letter-trigger.spacer-10.bg-body-tertiary.position-relative
+        .letter.mx-auto.w-75.position-absolute.top-50.start-50.translate-middle
+            p.letter-1.fs-4.fade 
+                | 세상에서 하진이를 놀리는 걸 제일 좋아하는 
+                span.h3.text-primary 서우
+                | 야!
+            p.letter-2.fs-5.line-break.fade 
+                span.fw-bold.text-danger 사랑해
+                | . 아주 많이, 정말 많이 사랑해. 이 세상 무엇과도 바꿀 수 없는 내 보물 서우! 서우가 내 여자친구라서 너무 행복해. 
+                | 역북집에서 시작된 우리의 인연이 이렇게까지 이어졌네. 
+                | 내가 향상교회 청년부를 처음 간 날 유진이 누나가 날 데리고 갔다면, 그래서 슬아 목장을 몰랐더라면... 
+                | 하나님의 계획하심이란 참 위대하신 것 같아. 서우를 나에게 인도해 주심에 감사 또 감사해 ㅎㅎ
+            p.letter-3.fs-5.line-break.fade
+                | 우리가 함께한 지난날들이 너무나도 행복하고 즐거운 추억들로 가득해.
+                | 을왕리, 강릉, 가평, 파주, 전주, 제주도. 서우를 만나기 전에는 상상도 못할 정도로 많은 추억들을 쌓았어. 
+                | 아! 흠뻑쇼도 갔었지! 휴 아직도 내가 거길 어떻게 갔는지 모르겠어 ㅋㅋㅋ
+                | 서우가 없었다면 내가 과연 이런 추억들을 가질 수 있었을까? 아마 절대 없었겠지. 
+            p.letter-4.fs-5.line-break.fade
+                | 나에게 항상 새로운 경험을 주는 서우야! 서우가 너무 고맙고 소중해. 
+                | 그저 눈 한번 감았다 뜬 것 같은데, 전 여자친구 한 트럭이냐고 카톡 할 때가 어젯밤 같은데, 우리가 벌써 이렇게 오래 만났네.
+                | 언제 시간이 이렇게 지났지? 진짜 순식간에 지나갔어. 그만큼 서우와 함께한 이 시간들이 즐겁고 행복으로 가득했던 거겠지.
+                | 서우는 어때? 서우도 나처럼 행복으로 가득한 시간들이었을까?
+            p.letter-5.fs-5.line-break.fade 
+                | 절대 싸우지 않을 것 같았던 우리도 결국 다툼이 생기고 서로를 이해하지 못한 일들이 있었지만,
+                | 하나님 안에서 기도로 이겨내려 하는 우리의 모습을 보면서 감사함을 느꼈어. 
+                span.fw-bold.text-danger '너희 염려를 다 주께 맡기라 이는 그가 너희를 돌보심이라' (베드로전서 5:7). 
+                | 행복도, 슬픔도, 염려도 모두 하나님께 맡겨드리고 함께 나아가자. 우리 사이에 항상 하나님이 함께하시고 지켜주시길 기도해. 
+            p.letter-6.fs-5.line-break.fade
+                | 사랑하고 좋아하고 애정해 ♡
+            p.letter-7.fs-5.text-sm-end.lh-sm.fade
+                span.today 2024년 6월 30일
+                br 
+                | 서우를 세상에서 제일 사랑하는 
+                span.h3.text-primary 하진
+                | 이가, 사랑을 듬뿍 담아.
 
 
     //- https://seoyun-is-connecting-the-dots.tistory.com/296
