@@ -3,7 +3,7 @@ const router = express.Router();
 
 // home.pug
 router.get('/', (req, res) => {
-    res.render('home');
+    res.render('./home/home');
 });
 
 // 노션 2024 설교요약 페이지 리디렉트

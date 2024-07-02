@@ -4,7 +4,7 @@
   "description": "Portfolio Website",
   "main": "index.js",
   "scripts": {
-    "dev": "nodemon ./public/scripts/router/index.js"
+    "dev": "nodemon ./scripts/router/index.js"
   },
   "repository": {
     "type": "git",
